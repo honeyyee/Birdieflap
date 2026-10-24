@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7fb">
+  <title>Birdieflap — a tiny sky adventure</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Birdieflap home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>birdie<span class="brand-highlight">flap</span></span>
+      </a>
+      <div class="top-note"><span class="live-dot"></span> A little sky adventure</div>
+      <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Toggle sound" title="Toggle sound">
+        <span id="sound-icon" aria-hidden="true">♫</span><span class="sound-label">SOUND ON</span>
+      </button>
+    </header>
+
+    <section class="game-layout" aria-label="Flappy Bird game">
+      <aside class="side-panel left-panel">
+        <div class="eyebrow">YOUR DAILY DOSE OF</div>
+        <h1>One more<br><span>flap.</span></h1>
+        <p class="intro">A tiny bird, a big pink sky, and just one more try.</p>
+        <div class="tip-card">
+          <span class="tip-icon">✧</span>
+          <div><strong>Little tip</strong><p>Short taps keep you steady. Find your rhythm!</p></div>
+        </div>
+        <div class="made-with"><span class="tiny-heart">♥</span> Made for cozy breaks</div>
+      </aside>
+
+      <div class="game-wrap">
+        <div class="game-frame">
+          <canvas id="game" width="480" height="720" aria-label="Flappy Bird game canvas" role="img"></canvas>
+          <div class="frame-glow" aria-hidden="true"></div>
+        </div>
+        <div class="game-caption"><span class="caption-star">✦</span> TAP OR PRESS SPACE TO FLAP <span class="caption-star">✦</span></div>
+      </div>
+
+      <aside class="side-panel right-panel">
+        <div class="stat-card best-card">
+          <span class="stat-label">PERSONAL BEST</span>
+          <div class="best-value"><span class="best-star">✦</span><span id="best-score">0</span></div>
+          <span class="best-caption">Your sky-high score</span>
+        </div>
+        <div class="how-card">
+          <div class="how-title"><span>HOW TO PLAY</span><span class="how-sparkle">✧</span></div>
+          <div class="control-row"><span class="keycap">SPACE</span><span>Flap your wings</span></div>
+          <div class="control-row"><span class="keycap mouse-key">CLICK</span><span>Or tap anywhere</span></div>
+          <div class="control-row"><span class="keycap">ESC</span><span>Pause the game</span></div>
+        </div>
+        <button class="restart-button" id="restart-button" type="button"><span>↻</span> Start a fresh run</button>
+        <p class="session-note">Take a breath. You’ve got this <span>♡</span></p>
+      </aside>
+    </section>
+    <footer class="footer"><span>© 2026 BIRDIEFLAP</span><span class="footer-center">A soft landing for your brain</span><span>BUILT WITH <b>♥</b> & PIXELS</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
